@@ -14,13 +14,15 @@ font-family: Arial, Helvetica, sans-serif;
 .topnav {
   overflow: hidden;
   padding: 0 100px;
-  background-color: #e9e9e9;
+  //background-color: #e9e9e9;
+  background-color: var(--back-color);
+  
 }
 
 .topnav p {
   float: left;
   display: block;
-  color: black;
+  color: var(--title-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -28,21 +30,19 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav p:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--title-color);
+  color: var(--back-color);
 }
 
 .topnav p.active {
-  background-color: #2196F3;
-  color: white;
+  background-color: var(--font-color);
+  color: var(--title-color);
+  cursor: context-menu;
 }
-
-
-
 
 .topnav .search-container {
   float: right;
-  padding: 14px 16px;
+  padding: 18px 16px;
 
 }
 
@@ -55,7 +55,10 @@ font-family: Arial, Helvetica, sans-serif;
   padding: 6px;
   margin-top: 8px;
   font-size: 17px;
+  color: black;
   border: none;
+  background-color: var(--font-color);
+  color: var(--back-color);
 }
 
 .topnav .search-container button {
@@ -63,7 +66,7 @@ font-family: Arial, Helvetica, sans-serif;
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  background: #ddd;
+  background-color: var(--font-color);
   font-size: 17px;
   border: none;
   cursor: pointer;
@@ -77,7 +80,7 @@ font-family: Arial, Helvetica, sans-serif;
   .topnav .search-container {
     float: none;
   }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
+  .topnav p, .topnav input[type=text], .topnav .search-container button {
     float: none;
     display: block;
     text-align: left;

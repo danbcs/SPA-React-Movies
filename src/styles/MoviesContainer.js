@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const MoviesContainer = styled.section`
     padding: 50px 120px;
-    background: lightgrey;
+    background: var(--back-color);
+
+    h2 {
+        color: var(--title-color);
+    }
     ul {
         list-style: none;
         display: flex;
@@ -25,6 +29,7 @@ export const MoviesContainer = styled.section`
             li {
                 padding-top:5px;
                 text-align: center;
+                color: white;
             }
         }
     }

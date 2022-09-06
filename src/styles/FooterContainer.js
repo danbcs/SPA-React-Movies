@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
 
-background: lightgrey;
+background: var(--back-color);
+color: var(--title-color);
 
 section.footer {
     display: flex;

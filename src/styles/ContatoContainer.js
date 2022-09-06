@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const ContatoContainer = styled.section`
 
-padding: 80px 100px;
+background-color: #3e4a61;
+padding: 40px 150px;
 
 section.formcontato div.formcontato--contacto {
 display: flex;
@@ -25,6 +26,9 @@ display: flex;
 justify-content: space-evenly;
 flex-direction: column;
 margin: 0;
+padding: 50px;
+background-color: rgba(0,0,0,0.1);
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 section.formcontato div.formcontato--contacto div.formcontato--text h2{
@@ -38,22 +42,25 @@ display: flex;
 justify-content: space-around;
 flex-direction: column;
 height: 300px;
+
 }
 
 section.formcontato div.formcontato--contacto div.formcontato--text form input {
 height: 44px;
+background-color: rgba(255,255,255,0.7);
 }
 
 section.formcontato div.formcontato--contacto div.formcontato--text form textarea {
 resize: none;
+background-color: rgba(255,255,255,0.7);
 }
 
 section.formcontato div.formcontato--contacto div.formcontato--text form button {
-background-color: var(--cor-titulos);
-color: var(--cor-fundo-azul);
+background-color: var(--font-color);
+color: var(--title-color);
 }
 
 section.formcontato div.formcontato--contacto div.formcontato--text form button:hover {
-background-color: var(--cor-de-link);
+background-color: var(--link-color);
 }
 `
