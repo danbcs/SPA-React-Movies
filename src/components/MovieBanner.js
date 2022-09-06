@@ -11,16 +11,16 @@ export const MovieBanner = ({ slideImages }) => (
             <Slide>
                 {slideImages.map((slideImages, index) => {
                     return (
-                        <Link to={`movie/${slideImages.id}`}>
-                        <div className="each-slide" key={index}>
-                                <div style={{ backgroundImage: `url(${slideImages.url})` }}>
+                        <Link to={`movie/${slideImages.id}`} key={index.toString()}>
+                            <div className="each-slide">
+                                <div style={{ backgroundImage: `url(${slideImages.url} )` }}>
                                     <span> {slideImages.caption} </span>
                                 </div>
-                        </div>
+                            </div>
                         </Link>
                     );
                 })}
             </Slide>
-        </div >
-    </StyleContainer >
+        </div>
+    </StyleContainer>
 );

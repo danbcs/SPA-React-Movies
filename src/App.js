@@ -1,5 +1,3 @@
-import { Header } from "./components/Header";
-
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,6 +9,7 @@ import { About } from "./views/About";
 import { MovieDetail } from "./views/MovieDetail";
 import { Contato } from "./views/Contato";
 import { Footer } from "./views/Footer";
+import { TopNav } from "./components/TopNav";
 
 function App() {
 
@@ -18,11 +17,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+        <TopNav />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/:type/:id" element={<MovieDetail />} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/:type/:id" element={<MovieDetail/> } />
         </Routes>
         <Contato />
         <Footer />

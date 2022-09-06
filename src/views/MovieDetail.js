@@ -15,7 +15,7 @@ export const MovieDetail = () => {
     }
 
     useEffect(() => {
-        fetchMovies();
+        fetchMovies()
     }, []);
 
     return (
