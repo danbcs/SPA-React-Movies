@@ -10,6 +10,7 @@ import { MovieDetail } from "./views/MovieDetail";
 import { Contato } from "./views/Contato";
 import { Footer } from "./views/Footer";
 import { TopNav } from "./components/TopNav";
+import { Login } from "./components/Login";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/:type/:id" element={<MovieDetail/> } />
+          <Route path="/login" element={<Login/> } />
         </Routes>
         <Contato />
         <Footer />

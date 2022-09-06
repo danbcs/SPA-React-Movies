@@ -11,11 +11,10 @@ export const MovieDetail = () => {
     const fetchMovies = async () => {
         const { data } = await MoviesService.getInfoById(type, id);
         setMovie(data);
-        console.log(data);
     }
 
     useEffect(() => {
-        fetchMovies()
+        fetchMovies();
     }, []);
 
     return (

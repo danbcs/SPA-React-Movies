@@ -21,7 +21,7 @@ export const TopNav = () => (
                     <button type="submit"><i className="fa fa-search"></i></button>
                 </form>
             </div>
-            <Link to="/">
+            <Link to="/login">
                 <p className="login-container">Login</p>
             </Link>
 
